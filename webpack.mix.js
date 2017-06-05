@@ -11,8 +11,13 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.js('src/app.js', 'dist/')
-   .sass('src/app.scss', 'dist/');
+mix.copy([
+  'node_modules/bootstrap/dist/css/bootstrap.min.css',
+  'node_modules/bootstrap/dist/js/bootstrap.min.js',
+], 'Public/vendor/bootstrap/');
+mix.copy([
+  'node_modules/jquery/dist/jquery.min.js',
+], 'Public/vendor/jquery/');
 
 // Full API
 // mix.js(src, output);

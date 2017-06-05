@@ -1,0 +1,11 @@
+{
+  "name": "vapor_assets",
+  "version": "0.1.0",
+  "description": "A tutorial for working with frontend assets in Vapor",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Josh Justice <jjustice@bignerdranch.com>",
+  "license": "MIT"
+}

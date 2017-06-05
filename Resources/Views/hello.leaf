@@ -3,6 +3,18 @@
 #export("title") { Hello, #(name)! }
 
 #export("content") {
-	<h1>Hello, #(name)!</h1>
-}
+  <div>
+    <ul class="nav nav-tabs" role="tablist" id="myTabs">
+      <li role="presentation" class="active"><a href="#()tab1" aria-controls="tab1" role="tab" data-toggle="tab">Tab 1</a></li>
+      <li role="presentation"><a href="#()tab2" aria-controls="tab2" role="tab" data-toggle="tab">Tab 2</a></li>
+    </ul>
 
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane active" id="tab1">
+        <h1>Hello, #(name)!</h1>
+      </div>
+      <div role="tabpanel" class="tab-pane" id="tab2">
+        <h1>This is tab 2.</h1>
+      </div>
+  </div>
+}

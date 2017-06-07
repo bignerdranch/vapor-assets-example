@@ -11,13 +11,15 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.copy([
+mix.combine([
   'node_modules/bootstrap/dist/css/bootstrap.min.css',
-  'node_modules/bootstrap/dist/js/bootstrap.min.js',
-], 'Public/vendor/bootstrap/');
-mix.copy([
+  'Resources/Assets/styles/app.css',
+], 'Public/all.css');
+mix.combine([
   'node_modules/jquery/dist/jquery.min.js',
-], 'Public/vendor/jquery/');
+  'node_modules/bootstrap/dist/js/bootstrap.min.js',
+  'Resources/Assets/scripts/app.js',
+], 'Public/all.js');
 
 // Full API
 // mix.js(src, output);

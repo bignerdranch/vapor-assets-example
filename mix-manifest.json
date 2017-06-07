@@ -1,3 +1,5 @@
 {
-  "/mix.js": "/mix.js"
+  "/mix.js": "/mix.js",
+  "Public/styles/app.css": "Public/styles/app.css",
+  "Public/scripts/app.js": "Public/scripts/app.js"
 }
